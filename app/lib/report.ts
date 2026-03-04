@@ -1,0 +1,54 @@
+import { SCHOOL_NAME } from "./school-config";
+
+export interface ReportParams {
+  lastUserText: string;
+  lastBotText: string;
+  citations?: { title: string; url?: string; score: number }[];
+}
+
+export function buildReportMailto({
+  lastUserText,
+  lastBotText,
+  citations,
+}: ReportParams): string {
+  const NA = "(not available)";
+  const to = "feedback@ashfordcollege.ac.uk";
+  const subject = `${SCHOOL_NAME} Chatbot feedback \u2013 flagged output`;
+
+  const timestamp = new Date().toLocaleString();
+  const pageUrl =
+    typeof window !== "undefined" ? window.location.href : NA;
+  const userAgent =
+    typeof window !== "undefined" ? navigator.userAgent : NA;
+
+  const citationLines =
+    citations && citations.length > 0
+      ? citations
+          .map(
+            (c, i) =>
+              `  ${i + 1}. ${c.title}${c.url ? ` \u2014 ${c.url}` : ""} (${(c.score * 100).toFixed(0)}% match)`
+          )
+          .join("\r\n")
+      : "  (none)";
+
+  const body = [
+    `Timestamp: ${timestamp}`,
+    `Page URL: ${pageUrl}`,
+    `App version: 1.0.0`,
+    `User agent: ${userAgent}`,
+    ``,
+    `--- Last user message ---`,
+    lastUserText || NA,
+    ``,
+    `--- Assistant response ---`,
+    lastBotText || NA,
+    ``,
+    `--- Citations ---`,
+    citationLines,
+    ``,
+    `--- Leave your feedback below ---`,
+    ``,
+  ].join("\r\n");
+
+  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
