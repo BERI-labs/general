@@ -14,6 +14,133 @@ interface Chunk {
 
 let chunks: Chunk[] = [];
 
+// ── Compound-term preservation (must be processed before tokenisation) ───────
+
+const COMPOUND_TERMS: Record<string, string> = {
+  "a-level":      "a-level",
+  "a-levels":     "a-level",
+  "a level":      "a-level",
+  "a levels":     "a-level",
+  "co-curricular":"co-curricular",
+  "co curricular":"co-curricular",
+  "sixth form":   "sixth-form",
+  "sixth-form":   "sixth-form",
+  "get to":       "get-to",
+  "getting to":   "get-to",
+};
+
+// ── Stop-word list (filtered from query tokens only, not from the index) ─────
+
+const STOP_WORDS = new Set([
+  "a", "an", "the", "is", "are", "was", "were", "be", "been", "being",
+  "do", "does", "did", "have", "has", "had", "having",
+  "i", "me", "my", "we", "our", "you", "your",
+  "it", "its", "he", "she", "they", "them", "their",
+  "this", "that", "these", "those",
+  "what", "which", "who", "whom", "where", "when", "why", "how",
+  "if", "or", "and", "but", "not", "no", "nor",
+  "in", "on", "at", "to", "for", "of", "by", "with", "from", "about",
+  "can", "could", "will", "would", "shall", "should", "may", "might",
+  "so", "than", "too", "very", "just", "tell", "please", "know", "want",
+]);
+
+// ── Synonym map (query expansion) ────────────────────────────────────────────
+// Keys are query tokens; values are extra tokens appended before BM25/vector search.
+// TODO: "bursary"/"bursaries" are standard UK independent-school terms kept as-is.
+//       If porting to a school that uses a different term (e.g. "financial aid"),
+//       add corresponding synonyms here.
+
+const SYNONYM_MAP: Record<string, string[]> = {
+  cost:         ["fees", "tuition", "price", "pricing"],
+  costs:        ["fees", "tuition", "price", "pricing"],
+  price:        ["fees", "tuition", "cost"],
+  prices:       ["fees", "tuition", "cost"],
+  pricing:      ["fees", "tuition", "cost"],
+  afford:       ["bursary", "bursaries", "financial", "assistance"],
+  affordable:   ["bursary", "fee", "assistance"],
+  cheap:        ["bursary", "fee", "assistance", "affordable"],
+  money:        ["fees", "financial", "bursary", "bursaries", "cost"],
+  pay:          ["fees", "payment", "tuition"],
+  paying:       ["fees", "payment", "tuition"],
+  payment:      ["fees", "tuition", "cost"],
+  financial:    ["bursary", "bursaries", "fees", "assistance", "funding"],
+  funding:      ["bursary", "bursaries", "financial", "assistance"],
+  bursary:      ["financial", "means-tested", "assistance"],
+  bursaries:    ["financial", "means-tested", "assistance"],
+  scholarship:  ["award", "merit"],
+  scholarships: ["award", "merit"],
+  apply:        ["application", "admissions", "register", "entry"],
+  applying:     ["application", "admissions", "register", "entry"],
+  joining:      ["admissions", "entry", "application", "enrol"],
+  enrol:        ["admissions", "entry", "application", "joining"],
+  enroll:       ["admissions", "entry", "application", "joining"],
+  gcse:         ["gcses", "curriculum", "subjects", "exam", "options"],
+  gcses:        ["gcse", "curriculum", "subjects", "exam", "options"],
+  offer:        ["curriculum", "subjects", "courses", "options"],
+  subjects:     ["curriculum", "courses", "options", "gcse", "a-level"],
+  subject:      ["curriculum", "courses", "options", "gcse", "a-level"],
+  sport:        ["sports", "co-curricular", "activities", "facilities"],
+  sports:       ["sport", "co-curricular", "activities", "facilities"],
+  uniform:      ["dress", "clothing", "kit"],
+  teacher:      ["staff", "faculty"],
+  teachers:     ["staff", "faculty"],
+  "a-level":    ["gcse", "exam", "curriculum", "subjects", "sixth-form"],
+  "sixth-form": ["sixth", "curriculum", "a-level", "courses", "university", "destinations"],
+  level:        ["a-level", "results", "grades", "exam"],
+  grades:       ["results", "gcse", "a-level", "performance", "attainment"],
+  grade:        ["results", "gcse", "a-level", "performance"],
+  results:      ["grades", "gcse", "a-level", "performance", "attainment"],
+  exam:         ["gcse", "a-level", "assessment", "test"],
+  exams:        ["gcse", "a-level", "assessment", "tests"],
+  club:         ["co-curricular", "activities", "society", "sport"],
+  clubs:        ["co-curricular", "activities", "societies", "sports"],
+  trip:         ["visits", "travel", "expedition", "tour"],
+  trips:        ["visits", "travel", "expeditions", "tours"],
+  contact:      ["address", "phone", "email", "telephone"],
+  location:     ["address", "directions", "map", "campus", "transport"],
+  directions:   ["transport", "location", "address", "map", "bus", "coach"],
+  "get-to":     ["directions", "transport", "location", "address", "bus", "coach", "travel"],
+  visit:        ["open", "day", "tour", "directions", "transport"],
+  visiting:     ["open", "day", "tour", "directions", "transport"],
+  bus:          ["transport", "travel", "coach", "minibus"],
+  transport:    ["bus", "travel", "coach", "minibus", "directions"],
+  uni:          ["university", "universities"],
+  university:   ["uni"],
+  universities: ["uni"],
+  date:         ["deadline", "deadlines", "registration", "timeline", "calendar"],
+  dates:        ["deadline", "deadlines", "registration", "timeline", "calendar"],
+  deadline:     ["date", "dates", "registration", "timeline"],
+  deadlines:    ["date", "dates", "registration", "timeline"],
+  when:         ["date", "dates", "deadline", "timeline"],
+  registration: ["admissions", "entry", "application", "deadline"],
+  register:     ["admissions", "entry", "application", "registration"],
+  entry:        ["admissions", "application", "joining"],
+  admissions:   ["entry", "application", "joining", "apply"],
+};
+
+// ── Section-relevance signals (used for sectionBoost) ────────────────────────
+
+const SECTION_SIGNALS: Record<string, Set<string>> = {
+  Financial: new Set([
+    "financial", "finance", "fee", "fees", "tuition", "cost", "costs", "price", "prices",
+    "pay", "paying", "payment", "afford", "affordable", "bursary", "bursaries", "funding",
+    "scholarship", "scholarships", "money", "cheap", "assistance", "award",
+  ]),
+  Admissions: new Set([
+    "apply", "applying", "application", "admissions", "enrol", "enroll", "entry",
+    "joining", "register", "registration", "admission", "intake", "open", "day",
+    "date", "dates", "deadline", "deadlines", "when",
+  ]),
+  Academic: new Set([
+    "subjects", "subject", "curriculum", "gcse", "gcses", "a-level", "diploma", "academic",
+    "exam", "exams", "grades", "grade", "results", "courses", "course", "sixth", "sixth-form", "offer",
+  ]),
+  "Co-Curricular": new Set([
+    "sport", "sports", "club", "clubs", "activities", "trip", "trips", "co-curricular",
+    "music", "drama", "art", "society", "societies",
+  ]),
+};
+
 // ── BM25 index (built once after chunks load) ───────────────────────────────
 
 const BM25_K1 = 1.2;
@@ -24,7 +151,52 @@ let docTermFreqs: { terms: Map<string, number>; length: number }[] = []; // per-
 let avgDocLength = 0;
 
 function tokenize(text: string): string[] {
-  return text.toLowerCase().replace(/[^a-z0-9']+/g, " ").split(/\s+/).filter((t) => t.length > 1);
+  // Preserve compound terms before general tokenisation
+  let lower = text.toLowerCase();
+  const preserved: string[] = [];
+  for (const [pattern, token] of Object.entries(COMPOUND_TERMS)) {
+    const idx = lower.indexOf(pattern);
+    if (idx !== -1) {
+      const placeholder = `__compound${preserved.length}__`;
+      preserved.push(token);
+      lower = lower.replace(
+        new RegExp(pattern.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"),
+        placeholder,
+      );
+    }
+  }
+  const tokens = lower.replace(/[^a-z0-9_']+/g, " ").split(/\s+/).filter((t) => t.length > 1);
+  return tokens.map((t) => {
+    const match = t.match(/^__compound(\d+)__$/);
+    return match ? preserved[Number(match[1])] : t;
+  });
+}
+
+function removeStopWords(tokens: string[]): string[] {
+  const filtered = tokens.filter((t) => !STOP_WORDS.has(t));
+  return filtered.length > 0 ? filtered : tokens;
+}
+
+function expandQuery(query: string): string {
+  const terms = tokenize(query);
+  const extra = new Set<string>();
+  for (const term of terms) {
+    const synonyms = SYNONYM_MAP[term];
+    if (synonyms) {
+      for (const s of synonyms) extra.add(s);
+    }
+  }
+  if (extra.size === 0) return query;
+  return query + " " + [...extra].join(" ");
+}
+
+function sectionBoost(queryTerms: string[], chunkSection: string): number {
+  const signals = SECTION_SIGNALS[chunkSection];
+  if (!signals) return 0;
+  for (const term of queryTerms) {
+    if (signals.has(term)) return SECTION_BOOST;
+  }
+  return 0;
 }
 
 function buildBM25Index() {
@@ -89,19 +261,10 @@ function cosineSim(a: number[], b: number[]): number {
 
 const BM25_WEIGHT = 0.3325;
 const VECTOR_WEIGHT = 0.6675;
-const TITLE_BOOST = 0.15;
-
-function normalizeScores(scored: { idx: number; score: number }[]): Map<number, number> {
-  if (scored.length === 0) return new Map();
-  const max = scored[0].score; // already sorted descending
-  const min = scored[scored.length - 1].score;
-  const range = max - min || 1;
-  const map = new Map<number, number>();
-  for (const s of scored) {
-    map.set(s.idx, (s.score - min) / range);
-  }
-  return map;
-}
+const TITLE_BOOST = 0.22;   // increased from 0.15 — title matches are a strong signal
+const SECTION_BOOST = 0.1;  // bonus when query signals match chunk section category
+const MIN_SCORE_THRESHOLD = 0.05; // drop noise results before returning to UI
+const MAX_FUSED_SCORE = 1.32;     // theoretical max (BM25_WEIGHT + VECTOR_WEIGHT + TITLE_BOOST + SECTION_BOOST)
 
 function titleMatchBoost(queryTerms: string[], chunkTitle: string): number {
   const titleTerms = new Set(tokenize(chunkTitle));
@@ -110,12 +273,17 @@ function titleMatchBoost(queryTerms: string[], chunkTitle: string): number {
   for (const qt of queryTerms) {
     if (titleTerms.has(qt)) matches++;
   }
-  return (matches / titleTerms.size) * TITLE_BOOST;
+  // Divide by queryTerms.length (not titleTerms.size) so precision is measured
+  // against the query rather than the title length
+  return (matches / queryTerms.length) * TITLE_BOOST;
 }
 
 async function hybridSearch(query: string, topK: number) {
+  // Expand query with synonyms, then filter stop words for scoring
+  const expandedQuery = expandQuery(query);
+  const queryTerms = removeStopWords(tokenize(expandedQuery));
+
   // BM25 leg — always available
-  const queryTerms = tokenize(query);
   const bm25Candidates = chunks
     .map((chunk, i) => ({ idx: i, chunk, score: bm25Score(queryTerms, i) }))
     .filter((r) => r.score > 0)
@@ -124,14 +292,20 @@ async function hybridSearch(query: string, topK: number) {
 
   const hasEmbeddings = embedderReady && embedder && chunks.length > 0 && chunks[0].embedding.length > 0;
 
+  // Normalise BM25 scores relative to the top score (absolute, not min-max)
+  const bm25Max = bm25Candidates.length > 0 ? bm25Candidates[0].score : 1;
+  const bm25NormMap = new Map(bm25Candidates.map((r) => [r.idx, r.score / bm25Max]));
+
   if (!hasEmbeddings) {
-    // Embedder not ready — BM25 only; normalize scores to [0, 1] before returning
-    const bm25Norm = normalizeScores(bm25Candidates);
-    return bm25Candidates.slice(0, topK).map((r) => ({ chunk: r.chunk, score: bm25Norm.get(r.idx) ?? 0 }));
+    // Embedder not ready — BM25 + section boost only
+    return bm25Candidates.slice(0, topK).map((r) => ({
+      chunk: r.chunk,
+      score: ((bm25NormMap.get(r.idx) ?? 0) * BM25_WEIGHT + sectionBoost(queryTerms, r.chunk.section)) / MAX_FUSED_SCORE,
+    }));
   }
 
-  // Vector leg
-  const output = await embedder(query, { pooling: "mean", normalize: true });
+  // Vector leg — embed the expanded query for richer semantic coverage
+  const output = await embedder(expandedQuery, { pooling: "mean", normalize: true });
   const queryVec = Array.from(output.data as Float32Array) as number[];
 
   const vectorCandidates = chunks
@@ -139,24 +313,24 @@ async function hybridSearch(query: string, topK: number) {
     .sort((a, b) => b.score - a.score)
     .slice(0, topK * 3);
 
-  // Min-max normalize both score sets
-  const bm25Norm = normalizeScores(bm25Candidates);
-  const vecNorm = normalizeScores(vectorCandidates);
+  // Cosine scores are already in [0, 1] for normalised vectors
+  const vecNormMap = new Map(vectorCandidates.map((r) => [r.idx, r.score]));
 
   // Merge all candidate indices
   const allIdxs = new Set<number>();
   for (const c of bm25Candidates) allIdxs.add(c.idx);
   for (const c of vectorCandidates) allIdxs.add(c.idx);
 
-  // Weighted fusion + title-match boost
+  // Weighted fusion + title-match + section boost, normalised to [0, 1]
   const fused: { chunk: Chunk; score: number }[] = [];
   for (const idx of allIdxs) {
-    const bScore = bm25Norm.get(idx) ?? 0;
-    const vScore = vecNorm.get(idx) ?? 0;
+    const bScore = bm25NormMap.get(idx) ?? 0;
+    const vScore = vecNormMap.get(idx) ?? 0;
     const tBoost = titleMatchBoost(queryTerms, chunks[idx].title);
+    const sBoost = sectionBoost(queryTerms, chunks[idx].section);
     fused.push({
       chunk: chunks[idx],
-      score: BM25_WEIGHT * bScore + VECTOR_WEIGHT * vScore + tBoost,
+      score: (BM25_WEIGHT * bScore + VECTOR_WEIGHT * vScore + tBoost + sBoost) / MAX_FUSED_SCORE,
     });
   }
 
@@ -361,13 +535,14 @@ async function handleSearch(query: string, id: string) {
 
   const results = await hybridSearch(query, topK);
 
+  // Drop noise results below the minimum relevance threshold;
+  // return in score-descending order so the best chunk is shown first
   const mapped = results
-    .filter((r) => r.score > 0)
+    .filter((r) => r.score > MIN_SCORE_THRESHOLD)
     .map((r) => ({
       chunk: { title: r.chunk.title, text: r.chunk.text, chunkIndex: r.chunk.chunkIndex, url: r.chunk.url },
       score: r.score,
-    }))
-    .sort((a, b) => a.chunk.chunkIndex - b.chunk.chunkIndex);
+    }));
 
   self.postMessage({ type: "search-results", id, results: mapped });
 }
