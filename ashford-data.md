@@ -18,7 +18,7 @@ Open mornings are held in October and November each year. Private tours are avai
 
 **Source:** https://www.ashfordcollege.ac.uk/admissions/guide-2024
 
----
+----
 
 ## Tuition Fees
 
