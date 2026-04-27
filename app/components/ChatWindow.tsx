@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import type { AppState, Message } from "../lib/types";
 import { RAGOrchestrator } from "../lib/rag";
-import { SCHOOL_NAME, LOGO_PATH } from "../lib/school-config";
+import { SCHOOL_NAME, CHATBOT_NAME, LOGO_PATH } from "../lib/school-config";
 import { WelcomeScreen } from "./WelcomeScreen";
 import { MessageList } from "./MessageList";
 import { InputBar } from "./InputBar";
@@ -11,7 +11,7 @@ import { AboutModal } from "./AboutModal";
 
 type WorkerStatus = "loading" | "orama-ready" | "embedder-ready" | "embedder-fallback";
 
-const ABOUT_STORAGE_KEY = "ashford-about-seen";
+const ABOUT_STORAGE_KEY = "beri-about-seen";
 const MAX_MESSAGES_PER_CONVERSATION = 42;
 const MAX_MESSAGES_PER_WINDOW = 3;
 const RATE_WINDOW_MS = 8000;
@@ -312,13 +312,13 @@ export function ChatWindow() {
                 className="text-sm font-semibold"
                 style={{ color: "var(--school-primary)" }}
               >
-                {SCHOOL_NAME}
+                {CHATBOT_NAME}
               </span>
               <span
                 className="ml-2 text-xs"
                 style={{ color: "var(--school-text-soft)" }}
               >
-                AI Assistant
+                {SCHOOL_NAME} AI Assistant
               </span>
             </div>
           </div>
@@ -327,9 +327,9 @@ export function ChatWindow() {
             onClick={() => setAboutOpen(true)}
             className="text-xs font-semibold uppercase tracking-widest transition-opacity hover:opacity-60"
             style={{ color: "var(--school-text-muted)" }}
-            aria-label={`About ${SCHOOL_NAME} Assistant`}
+            aria-label={`About ${CHATBOT_NAME}`}
           >
-            About
+            About {CHATBOT_NAME}
           </button>
         </div>
       </header>

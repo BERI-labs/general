@@ -1,6 +1,6 @@
 "use client";
 
-import { SCHOOL_NAME, LOGO_PATH, SUGGESTED_QUESTIONS } from "../lib/school-config";
+import { CHATBOT_NAME, SCHOOL_NAME, LOGO_PATH, SUGGESTED_QUESTIONS } from "../lib/school-config";
 
 interface WelcomeScreenProps {
   onQuestion: (q: string) => void;
@@ -42,7 +42,7 @@ export function WelcomeScreen({ onQuestion }: WelcomeScreenProps) {
           className="text-2xl font-semibold mb-3"
           style={{ color: "var(--school-text)" }}
         >
-          Welcome to {SCHOOL_NAME}
+          Hi, I&apos;m {CHATBOT_NAME}
         </h1>
 
         <p
@@ -57,9 +57,18 @@ export function WelcomeScreen({ onQuestion }: WelcomeScreenProps) {
           className="leading-relaxed"
           style={{ color: "var(--school-text-soft)", fontSize: "13.8px" }}
         >
-          Inspiring Minds, Shaping Futures. This AI assistant uses
-          retrieval-augmented generation to deliver cited, accurate answers
-          from the school knowledge base.
+          {CHATBOT_NAME} is a student-built AI tool created by{" "}
+          <a
+            href="https://beri-labs.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--school-primary)", textDecoration: "underline" }}
+          >
+            BERI Labs
+          </a>{" "}
+          — a student-led AI education framework that builds bespoke AI tools
+          for schools. It uses retrieval-augmented generation to deliver cited,
+          accurate answers from the school knowledge base.
         </p>
       </div>
 
