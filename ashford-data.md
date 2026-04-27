@@ -16,7 +16,7 @@ Registration deadline: 31 October for all entry points. A non-refundable registr
 
 Open mornings are held in October and November each year. Private tours are available year-round by appointment through the Admissions Office.
 
-**Source:** https://www.ashfordcollege.ac.uk/admissions/guide-2024
+**Source:** http://example.com
 
 ----
 
@@ -32,7 +32,7 @@ Payment is due by the first day of each term. The school accepts direct debit (m
 
 Sibling discount: a 5% reduction on the younger sibling's fees applies when two or more siblings attend concurrently.
 
-**Source:** https://www.ashfordcollege.ac.uk/fees/schedule-2024
+**Source:** http://example.com
 
 ---
 
@@ -46,7 +46,7 @@ Sibling discount: a 5% reduction on the younger sibling's fees applies when two 
 
 The school's value-added score consistently places it in the top 10% of independent schools nationally.
 
-**Source:** https://www.ashfordcollege.ac.uk/results/2024
+**Source:** http://example.com
 
 ---
 
@@ -62,7 +62,7 @@ Means-tested bursaries are available up to 100% of fees for families with demons
 
 Scholarship applications close two weeks before the relevant entrance assessment. All awards are reviewed annually; holders must maintain academic and conduct standards to retain their award.
 
-**Source:** https://www.ashfordcollege.ac.uk/fees/scholarships
+**Source:** http://example.com
 
 ---
 
@@ -78,7 +78,7 @@ The annual whole-school production takes place each autumn term. The inter-house
 
 The trips programme includes language exchanges with partner schools in France, Germany, and Spain. Year 9 pupils undertake an expedition week in the Lake District. A biennial World Challenge expedition takes Sixth Form students to destinations in South-East Asia or South America.
 
-**Source:** https://www.ashfordcollege.ac.uk/cocurricular/prospectus
+**Source:** http://example.com
 
 ---
 
@@ -96,7 +96,7 @@ ABRSM and Trinity Guildhall examination preparation is offered to all instrument
 
 A chamber music programme for advanced players runs throughout the year, with regular masterclasses hosted by visiting professional musicians from leading London ensembles.
 
-**Source:** https://www.ashfordcollege.ac.uk/music/handbook
+**Source:** http://example.com
 
 ---
 
@@ -112,4 +112,4 @@ Recent honours: Surrey U15 Rugby Champions 2024; National Schools Swimming Champ
 
 Partnerships with Elmbridge FC, Surrey Cricket Board, and Swim England South East provide additional coaching, fixture opportunities, and talent identification pathways for pupils.
 
-**Source:** https://www.ashfordcollege.ac.uk/sport/season-review-2024
+**Source:** http://example.com
