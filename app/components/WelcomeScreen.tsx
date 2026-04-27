@@ -63,6 +63,17 @@ export function WelcomeScreen({ onQuestion }: WelcomeScreenProps) {
         </p>
       </div>
 
+      {/* Featured overview button */}
+      <div className="max-w-2xl w-full mb-3">
+        <button
+          onClick={() => onQuestion(`Give me an in-depth overview of ${SCHOOL_NAME}`)}
+          className="w-full px-4 py-3 rounded-lg text-sm font-medium text-white text-center"
+          style={{ background: "var(--school-primary)" }}
+        >
+          Give me an in-depth overview of {SCHOOL_NAME}
+        </button>
+      </div>
+
       {/* Starter questions */}
       <div
         className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-2xl w-full mb-10"
