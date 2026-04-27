@@ -1,6 +1,6 @@
 "use client";
 
-import { SCHOOL_NAME } from "../lib/school-config";
+import { CHATBOT_NAME, SCHOOL_NAME } from "../lib/school-config";
 
 interface AboutModalProps {
   open: boolean;
@@ -31,7 +31,7 @@ export function AboutModal({ open, onClose }: AboutModalProps) {
             className="font-semibold uppercase tracking-widest"
             style={{ color: "var(--school-text)", fontSize: "0.875rem" }}
           >
-            About {SCHOOL_NAME}
+            About {CHATBOT_NAME}
           </h2>
           <button
             onClick={onClose}
@@ -52,16 +52,24 @@ export function AboutModal({ open, onClose }: AboutModalProps) {
               className="font-semibold mb-1"
               style={{ color: "var(--school-primary)", fontSize: "1.25rem" }}
             >
-              What is this?
+              What is {CHATBOT_NAME}?
             </dt>
             <dd
               className="text-sm leading-relaxed"
               style={{ color: "var(--school-text-soft)" }}
             >
-              This is an AI assistant for {SCHOOL_NAME}, an independent
-              co-educational secondary school in Elmbridge, Surrey. It answers
-              questions about admissions, fees, curriculum, sport, and school
-              life using a curated knowledge base.
+              {CHATBOT_NAME} is a school AI chatbot built by{" "}
+              <a
+                href="https://beri-labs.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "var(--school-primary)", textDecoration: "underline" }}
+              >
+                BERI Labs
+              </a>{" "}
+              — a student-led AI education project. It answers questions about{" "}
+              {SCHOOL_NAME}, a fictitious school created to showcase BERI Labs&apos; AI
+              education framework, with an emphasis on grounded citations.
             </dd>
           </div>
 
@@ -70,16 +78,15 @@ export function AboutModal({ open, onClose }: AboutModalProps) {
               className="font-semibold mb-1"
               style={{ color: "var(--school-primary)", fontSize: "1.25rem" }}
             >
-              What can it help me with?
+              What can {CHATBOT_NAME} help me with?
             </dt>
             <dd
               className="text-sm leading-relaxed"
               style={{ color: "var(--school-text-soft)" }}
             >
-              Ask about Year 7, Year 9, or Sixth Form entry requirements,
-              tuition fees and scholarships, exam results, sport, music, and
-              co-curricular activities — all with cited sources from the
-              school knowledge base.
+              {CHATBOT_NAME} covers 11+ and 13+ admissions, school fees and bursaries,
+              GCSE and A-level subject choices, sports and extracurricular activities —
+              all with cited sources from the school&apos;s knowledge base.
             </dd>
           </div>
 
@@ -88,16 +95,27 @@ export function AboutModal({ open, onClose }: AboutModalProps) {
               className="font-semibold mb-1"
               style={{ color: "var(--school-primary)", fontSize: "1.25rem" }}
             >
-              How does it work?
+              Who built {CHATBOT_NAME}?
             </dt>
             <dd
               className="text-sm leading-relaxed"
               style={{ color: "var(--school-text-soft)" }}
             >
-              The assistant uses hybrid search (BM25 keyword search plus
-              semantic vector search) to find relevant knowledge base passages,
-              then generates a response via an AI model — with cited sources
-              so you can verify the information.
+              {CHATBOT_NAME} is one of several student-built AI tools developed by{" "}
+              <a
+                href="https://beri-labs.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "var(--school-primary)", textDecoration: "underline" }}
+              >
+                BERI Labs
+              </a>
+              , a student-led AI education framework focused on building education AI
+              infrastructure for UK schools. BERI Labs was founded by{" "}
+              <strong>Ravjoth Brar</strong> and <strong>Énora Hauduc</strong>, two
+              students who built {CHATBOT_NAME} from the ground up. It is not an
+              official school service — always verify critical information directly with
+              the school.
             </dd>
           </div>
 
@@ -106,14 +124,15 @@ export function AboutModal({ open, onClose }: AboutModalProps) {
               className="font-semibold mb-1"
               style={{ color: "var(--school-primary)", fontSize: "1.25rem" }}
             >
-              Is this an official school tool?
+              How does {CHATBOT_NAME} work?
             </dt>
             <dd
               className="text-sm leading-relaxed"
               style={{ color: "var(--school-text-soft)" }}
             >
-              This is a demonstration project. Always verify important
-              information directly with {SCHOOL_NAME}.
+              {CHATBOT_NAME} uses a bespoke hybrid search method that queries the
+              school&apos;s knowledge base, then generates a response grounded in those
+              sources — so answers are accurate and traceable.
             </dd>
           </div>
         </dl>
