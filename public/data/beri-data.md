@@ -277,17 +277,17 @@ On-site parking is limited and reserved for staff. A drop-off zone is available 
 
 ## Term Dates
 
-The academic year 2024–25 term dates are as follows:
+The academic year 2026–27 term dates are as follows:
 
-**Michaelmas Term:** 5 September 2024 – 13 December 2024. Half-term: 28 October – 1 November 2024.
+**Michaelmas Term:** 5 September 2026 – 13 December 2026. Half-term: 28 October – 1 November 2026.
 
-**Lent Term:** 8 January 2025 – 28 March 2025. Half-term: 17–21 February 2025.
+**Lent Term:** 8 January 2027 – 28 March 2027. Half-term: 17–21 February 2027.
 
-**Summer Term:** 28 April 2025 – 4 July 2025. Half-term: 26–30 May 2025.
+**Summer Term:** 28 April 2027 – 4 July 2027. Half-term: 26–30 May 2027.
 
-INSET (staff training) days: 3–4 September 2024, 7 January 2025, 25 April 2025. Pupils do not attend on INSET days.
+INSET (staff training) days: 3–4 September 2026, 7 January 2027, 25 April 2027. Pupils do not attend on INSET days.
 
-Key dates: Open Morning (Year 7 entry) — 12 October 2024; Sixth Form Open Evening — 6 November 2024; Beri Entrance Exam — 18 January 2025; Spring Concert — 21 March 2025; Sports Day — 20 June 2025; Speech Day — 4 July 2025.
+Key dates: Open Morning (Year 7 entry) — 12 October 2026; Sixth Form Open Evening — 6 November 2026; Beri Entrance Exam — 18 January 2027; Spring Concert — 21 March 2027; Sports Day — 20 June 2027; Speech Day — 4 July 2027.
 
 **Source:** http://example.com
 
