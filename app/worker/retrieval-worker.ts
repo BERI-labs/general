@@ -453,9 +453,9 @@ async function init() {
 }
 
 async function _init() {
-  // 1. Load pre-built ashford-chunks.json (primary path)
+  // 1. Load pre-built beri-chunks.json (primary path)
   try {
-    const response = await fetch(`${basePath}/data/ashford-chunks.json`);
+    const response = await fetch(`${basePath}/data/beri-chunks.json`);
     if (response.ok) {
       const data = await response.json();
       if (Array.isArray(data) && data.length > 0) {
@@ -470,7 +470,7 @@ async function _init() {
   if (chunks.length === 0) {
     try {
       const response = await fetch(
-        `${basePath}/data/ashford-data.md`,
+        `${basePath}/data/beri-data.md`,
       );
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const markdown = await response.text();
