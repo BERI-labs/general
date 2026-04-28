@@ -242,3 +242,51 @@ Beri College operates a four-house system. Every pupil is assigned to a house on
 Each house is led by a Head of House (staff) and elected Sixth Form prefects. Inter-house competitions include House Music, House Drama, House Sports Day, House Quiz, and a Lent-term charity challenge. The House Cup is awarded at the end of the Summer term. House ties worn by Years 7–11 display the pupil's house colour.
 
 **Source:** http://example.com
+
+---
+
+## Pastoral Care
+
+Every pupil has a Form Tutor who monitors academic progress, wellbeing, and attendance and meets with their tutor group each morning. Tutors are the first point of contact for parents with pastoral concerns.
+
+The school employs a full-time School Counsellor and a qualified Mental Health Lead. A visiting Educational Psychologist attends half-termly. Drop-in wellbeing sessions are available to all pupils on Tuesdays and Thursdays at lunchtime.
+
+An Anti-Bullying Ambassador programme is run by trained Year 10 and 12 pupils. The school's behaviour and anti-bullying policies are published on the school website and reviewed annually.
+
+PSHE (Personal, Social, Health and Economic education) is timetabled for all year groups. Topics include mental health, relationships, online safety, financial literacy, and careers. Relationships and Sex Education (RSE) follows statutory guidance.
+
+Sixth Form pupils have access to a dedicated Sixth Form Counsellor and a Peer Mentoring scheme in which trained Year 13s support younger pupils.
+
+**Source:** http://example.com
+
+---
+
+## Transport
+
+Beri College runs a fleet of school coaches serving the following areas: Esher, Cobham, Weybridge, Walton-on-Thames, Guildford, and Kingston upon Thames. The coach network is operated by a contracted provider; timetables and routes are published at the start of each academic year.
+
+The nearest railway station is Elmbridge Central (8-minute walk). Trains run regularly from London Waterloo (journey time approximately 35 minutes) and from Guildford (approximately 20 minutes).
+
+Secure, covered cycle storage is available on site. Pupils who cycle are encouraged to complete a Bikeability Level 2 qualification.
+
+On-site parking is limited and reserved for staff. A drop-off zone is available on Beri Lane between 7:50am and 8:30am and between 3:30pm and 4:00pm. Parents are asked not to park on surrounding residential streets.
+
+**Source:** http://example.com
+
+---
+
+## Term Dates
+
+The academic year 2024–25 term dates are as follows:
+
+**Michaelmas Term:** 5 September 2024 – 13 December 2024. Half-term: 28 October – 1 November 2024.
+
+**Lent Term:** 8 January 2025 – 28 March 2025. Half-term: 17–21 February 2025.
+
+**Summer Term:** 28 April 2025 – 4 July 2025. Half-term: 26–30 May 2025.
+
+INSET (staff training) days: 3–4 September 2024, 7 January 2025, 25 April 2025. Pupils do not attend on INSET days.
+
+Key dates: Open Morning (Year 7 entry) — 12 October 2024; Sixth Form Open Evening — 6 November 2024; Beri Entrance Exam — 18 January 2025; Spring Concert — 21 March 2025; Sports Day — 20 June 2025; Speech Day — 4 July 2025.
+
+**Source:** http://example.com
