@@ -290,3 +290,45 @@ INSET (staff training) days: 3–4 September 2024, 7 January 2025, 25 April 2025
 Key dates: Open Morning (Year 7 entry) — 12 October 2024; Sixth Form Open Evening — 6 November 2024; Beri Entrance Exam — 18 January 2025; Spring Concert — 21 March 2025; Sports Day — 20 June 2025; Speech Day — 4 July 2025.
 
 **Source:** http://example.com
+
+---
+
+## Food and Catering
+
+Lunch is included in the termly fee for all year groups and is served in the school's main dining hall. A hot meal, vegetarian option, salad bar, and soup are provided daily. Menus are planned by a qualified nutritionist and rotated on a three-week cycle.
+
+The school is fully nut-aware. Pupils with allergies or dietary requirements (including halal, vegetarian, vegan, gluten-free) should register their needs with the School Office at the start of each year. Kitchen staff are trained in allergen management.
+
+A school café (the Beri Pantry) is open before school from 7:45am and at morning break, serving hot drinks, pastries, and light snacks. Sixth Form students may use the café during free periods.
+
+Food brought from home may be eaten in designated areas. Energy drinks are not permitted on site.
+
+**Source:** http://example.com
+
+---
+
+## Library and Resources
+
+The school library holds over 18,000 volumes across all subject areas and is open from 8:00am to 6:00pm on school days. A full-time, qualified Librarian manages the collection and supports research skills across all year groups.
+
+All pupils in Years 7–9 have a timetabled library lesson once per fortnight. The library hosts a reading programme, author visits, a Book Club, and the annual Beri Book Prize, voted on by pupils.
+
+The library provides access to a suite of online databases including JSTOR, Encyclopaedia Britannica, and the school's e-book platform. Sixth Form students may reserve private study desks in the silent study section.
+
+A well-resourced careers library is located adjacent to the main library and is managed by the school's careers team.
+
+**Source:** http://example.com
+
+---
+
+## Technology and IT
+
+All classrooms are equipped with interactive displays and high-speed Wi-Fi. Pupils in Years 7–11 are encouraged to bring a personal device (laptop or tablet); a loan scheme is available for those who need one.
+
+The school operates a 1:1 device programme for Sixth Form students, with school-managed laptops available for lease or purchase through the IT department.
+
+A dedicated computer suite with 40 workstations is available for lessons and supervised free-study use. The school uses Google Workspace for Education for email, documents, and assignment submission. Learning materials are hosted on the school's VLE (Virtual Learning Environment).
+
+The IT helpdesk is open each day from 8:00am to 5:00pm. Acceptable Use Policies govern device and internet use on site; pupils and parents sign these annually.
+
+**Source:** http://example.com
