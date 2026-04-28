@@ -332,3 +332,45 @@ A dedicated computer suite with 40 workstations is available for lessons and sup
 The IT helpdesk is open each day from 8:00am to 5:00pm. Acceptable Use Policies govern device and internet use on site; pupils and parents sign these annually.
 
 **Source:** http://example.com
+
+---
+
+## Learning Support and SEND
+
+Beri College's Learning Development department supports pupils with a range of Special Educational Needs and Disabilities (SEND), including dyslexia, dyspraxia, ADHD, and autism spectrum conditions.
+
+A full-time SENCo (Special Educational Needs Coordinator) leads the department, supported by two Learning Support Assistants. One-to-one and small-group withdrawal sessions are available. An Educational Psychologist visits half-termly for assessment and review.
+
+Access arrangements for public examinations (e.g. extra time, a reader, or a scribe) are applied for through the SENCo, in line with JCQ regulations. Parents considering applying should contact the SENCo as early as possible, ideally before entry.
+
+Pupils with EHCPs (Education, Health and Care Plans) are supported; prospective parents should disclose this at the registration stage so the school can assess whether it can meet the pupil's needs. All support plans are reviewed at least annually with pupils, parents, and relevant staff.
+
+**Source:** http://example.com
+
+---
+
+## Careers and Higher Education
+
+A dedicated Careers team, led by a qualified Careers Adviser, provides guidance from Year 9 onwards. All Year 9 pupils complete a careers interest assessment and receive an individual guidance interview.
+
+Year 10 and 11 pupils undertake a one-week work experience placement, arranged with support from the Careers team. The school maintains relationships with over 150 employer and alumni contacts across law, medicine, finance, engineering, the arts, and the public sector.
+
+Sixth Form UCAS support includes: personal statement workshops (September–October, Year 13), mock interviews (November), university application deadline tracking, and a dedicated UCAS Portal. The school subscribes to Unifrog for careers exploration and opportunity matching.
+
+An annual Careers Fair brings 40+ employers and university representatives to campus each February. Oxbridge preparation includes dedicated application support, practice interviews with Oxford and Cambridge alumni, and written work clinics.
+
+**Source:** http://example.com
+
+---
+
+## Community and Charity
+
+Beri College has a strong tradition of community engagement. Each year group undertakes at least one community service project. The whole-school charity is chosen by the School Council each September.
+
+The Sixth Form runs a Community Action programme, placing students in local primary schools, care homes, and charities for two hours per week. Participation is voluntary but strongly encouraged and noted in school references.
+
+Fundraising activities include the annual Sponsored Walk (typically raising £15,000–£20,000), bake sales, quiz nights, and the Lent-term House Charity Challenge. In 2024, the school raised over £28,000 for charitable causes.
+
+Beri College has a partnership with a school in Uganda through the Link Schools network, involving fundraising, letter exchanges, and a biennial staff visit.
+
+**Source:** http://example.com
