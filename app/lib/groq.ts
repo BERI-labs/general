@@ -38,7 +38,7 @@ export async function streamGroqCompletion({
         model: "openai/gpt-oss-20b",
         messages,
         temperature: 0.3,
-        max_completion_tokens: 512,
+        max_completion_tokens: 1500,
         stream: true,
         include_reasoning: includeReasoning,
         reasoning_effort: "low",
