@@ -440,3 +440,49 @@ The school's 22-acre campus includes:
 All buildings are accessible to wheelchair users. Disabled parking bays are located adjacent to the main entrance.
 
 **Source:** http://example.com
+
+---
+
+## Day School and Boarding
+
+Beri College is a day school; there are no boarding facilities. All pupils travel to and from school each day. The school's late-stay provision allows pupils to remain on site until 6:00pm on weekdays, with supervised prep in the library and access to after-school clubs.
+
+A breakfast club is available from 7:45am in the dining hall for pupils who arrive early. Early drop-off and late collection are managed through the school office.
+
+**Source:** http://example.com
+
+---
+
+## Religion and Ethos
+
+Beri College is a non-denominational school and welcomes pupils of all faiths and none. The school's values — integrity, curiosity, compassion, and service — underpin all aspects of school life.
+
+A non-compulsory multi-faith reflection room is available to pupils of all backgrounds. Religious and cultural festivals from a range of traditions are acknowledged in the school calendar. The PSHE and RS curricula include world religions and ethical philosophy.
+
+Collective worship takes the form of a weekly whole-school Assembly, which is broadly spiritual but non-religious in character. Sixth Form students lead assemblies on a rota basis.
+
+**Source:** http://example.com
+
+---
+
+## International Students
+
+Beri College welcomes applications from international families. As a day school, it does not provide accommodation, but can recommend local homestay providers and guardianship agencies.
+
+Students whose first language is not English may be assessed for English language support. The school offers EAL (English as an Additional Language) support through the Learning Development department. An IELTS score of 6.5 or above (or equivalent) is typically expected at Sixth Form entry for non-native English speakers.
+
+All international pupils must have the right to study in the UK. Beri College is not a UKVI-registered sponsor for student visas; international applicants should seek independent immigration advice.
+
+**Source:** http://example.com
+
+---
+
+## Alumni
+
+The Old Berians Association (OBA) connects graduates of Beri College worldwide. It organises an annual reunion dinner, a careers networking event, and a mentoring programme pairing current Sixth Form students with alumni working in their field of interest.
+
+Notable alumni (fictitious examples for demonstration): Dr Amara Osei, consultant cardiologist; James Whitfield QC, barrister; Professor Li Wei, University of Cambridge; Nadia Russo, BAFTA-nominated documentary filmmaker.
+
+Alumni wishing to register with the OBA or offer mentoring can contact the Development Office at alumni@bericollege.example.com.
+
+**Source:** http://example.com
