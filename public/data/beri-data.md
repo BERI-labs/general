@@ -193,3 +193,296 @@ Recent honours: Surrey U15 Rugby Champions 2024; National Schools Swimming Champ
 Partnerships with Elmbridge FC, Surrey Cricket Board, and Swim England South East provide additional coaching, fixture opportunities, and talent identification pathways for pupils.
 
 **Source:** http://example.com
+
+---
+
+## School Overview
+
+Beri College is a fictitious independent co-educational day school for pupils aged 11–18, used to demonstrate BERI Labs' AI education framework. It is modelled on a selective independent school in Elmbridge, Surrey, with approximately 900 pupils across Years 7–13.
+
+The school's ethos centres on academic rigour, personal development, and service to the community. It aims to develop curious, confident, and compassionate young people prepared for life beyond school.
+
+Beri College is a member of the Headmasters' and Headmistresses' Conference (HMC) and the Independent Schools Council (ISC). It holds ISI inspection ratings of Excellent across all categories.
+
+The school operates a house system, an extensive co-curricular programme, and strong links with the local community.
+
+**Source:** http://example.com
+
+---
+
+## Leadership
+
+**Headmaster:** Mr Jonathan Fairfax MA (Oxon) joined Beri College in 2019, previously serving as Deputy Head at a leading HMC school in the South East.
+
+**Deputy Head (Academic):** Dr Sarah Mwangi PhD, oversees curriculum, timetabling, and academic standards.
+
+**Deputy Head (Pastoral):** Mr David Okafor, responsible for pupil wellbeing, the house system, and behaviour policy.
+
+**Head of Sixth Form:** Ms Priya Sharma, leads Sixth Form provision including UCAS guidance and enrichment.
+
+**Bursar:** Mrs Helen Cartwright, manages finance, estates, and operations.
+
+**Head of Admissions:** Mrs Laura Chen handles all enquiries and open events. Contact: admissions@bericollege.example.com or 01372 000 000.
+
+The Senior Leadership Team meets weekly and is supported by a Board of Governors comprising independent professionals, parents, and community representatives.
+
+**Source:** http://example.com
+
+---
+
+## Houses
+
+Beri College operates a four-house system. Every pupil is assigned to a house on entry and remains in it throughout their time at school. The four houses are:
+
+- **Ashton** (red) — named after a pioneer in education
+- **Bramley** (blue) — named after a local historical figure
+- **Croft** (green) — named after a distinguished alumna
+- **Devere** (gold) — named after a school founder
+
+Each house is led by a Head of House (staff) and elected Sixth Form prefects. Inter-house competitions include House Music, House Drama, House Sports Day, House Quiz, and a Lent-term charity challenge. The House Cup is awarded at the end of the Summer term. House ties worn by Years 7–11 display the pupil's house colour.
+
+**Source:** http://example.com
+
+---
+
+## Pastoral Care
+
+Every pupil has a Form Tutor who monitors academic progress, wellbeing, and attendance and meets with their tutor group each morning. Tutors are the first point of contact for parents with pastoral concerns.
+
+The school employs a full-time School Counsellor and a qualified Mental Health Lead. A visiting Educational Psychologist attends half-termly. Drop-in wellbeing sessions are available to all pupils on Tuesdays and Thursdays at lunchtime.
+
+An Anti-Bullying Ambassador programme is run by trained Year 10 and 12 pupils. The school's behaviour and anti-bullying policies are published on the school website and reviewed annually.
+
+PSHE (Personal, Social, Health and Economic education) is timetabled for all year groups. Topics include mental health, relationships, online safety, financial literacy, and careers. Relationships and Sex Education (RSE) follows statutory guidance.
+
+Sixth Form pupils have access to a dedicated Sixth Form Counsellor and a Peer Mentoring scheme in which trained Year 13s support younger pupils.
+
+**Source:** http://example.com
+
+---
+
+## Transport
+
+Beri College runs a fleet of school coaches serving the following areas: Esher, Cobham, Weybridge, Walton-on-Thames, Guildford, and Kingston upon Thames. The coach network is operated by a contracted provider; timetables and routes are published at the start of each academic year.
+
+The nearest railway station is Elmbridge Central (8-minute walk). Trains run regularly from London Waterloo (journey time approximately 35 minutes) and from Guildford (approximately 20 minutes).
+
+Secure, covered cycle storage is available on site. Pupils who cycle are encouraged to complete a Bikeability Level 2 qualification.
+
+On-site parking is limited and reserved for staff. A drop-off zone is available on Beri Lane between 7:50am and 8:30am and between 3:30pm and 4:00pm. Parents are asked not to park on surrounding residential streets.
+
+**Source:** http://example.com
+
+---
+
+## Term Dates
+
+The academic year 2024–25 term dates are as follows:
+
+**Michaelmas Term:** 5 September 2024 – 13 December 2024. Half-term: 28 October – 1 November 2024.
+
+**Lent Term:** 8 January 2025 – 28 March 2025. Half-term: 17–21 February 2025.
+
+**Summer Term:** 28 April 2025 – 4 July 2025. Half-term: 26–30 May 2025.
+
+INSET (staff training) days: 3–4 September 2024, 7 January 2025, 25 April 2025. Pupils do not attend on INSET days.
+
+Key dates: Open Morning (Year 7 entry) — 12 October 2024; Sixth Form Open Evening — 6 November 2024; Beri Entrance Exam — 18 January 2025; Spring Concert — 21 March 2025; Sports Day — 20 June 2025; Speech Day — 4 July 2025.
+
+**Source:** http://example.com
+
+---
+
+## Food and Catering
+
+Lunch is included in the termly fee for all year groups and is served in the school's main dining hall. A hot meal, vegetarian option, salad bar, and soup are provided daily. Menus are planned by a qualified nutritionist and rotated on a three-week cycle.
+
+The school is fully nut-aware. Pupils with allergies or dietary requirements (including halal, vegetarian, vegan, gluten-free) should register their needs with the School Office at the start of each year. Kitchen staff are trained in allergen management.
+
+A school café (the Beri Pantry) is open before school from 7:45am and at morning break, serving hot drinks, pastries, and light snacks. Sixth Form students may use the café during free periods.
+
+Food brought from home may be eaten in designated areas. Energy drinks are not permitted on site.
+
+**Source:** http://example.com
+
+---
+
+## Library and Resources
+
+The school library holds over 18,000 volumes across all subject areas and is open from 8:00am to 6:00pm on school days. A full-time, qualified Librarian manages the collection and supports research skills across all year groups.
+
+All pupils in Years 7–9 have a timetabled library lesson once per fortnight. The library hosts a reading programme, author visits, a Book Club, and the annual Beri Book Prize, voted on by pupils.
+
+The library provides access to a suite of online databases including JSTOR, Encyclopaedia Britannica, and the school's e-book platform. Sixth Form students may reserve private study desks in the silent study section.
+
+A well-resourced careers library is located adjacent to the main library and is managed by the school's careers team.
+
+**Source:** http://example.com
+
+---
+
+## Technology and IT
+
+All classrooms are equipped with interactive displays and high-speed Wi-Fi. Pupils in Years 7–11 are encouraged to bring a personal device (laptop or tablet); a loan scheme is available for those who need one.
+
+The school operates a 1:1 device programme for Sixth Form students, with school-managed laptops available for lease or purchase through the IT department.
+
+A dedicated computer suite with 40 workstations is available for lessons and supervised free-study use. The school uses Google Workspace for Education for email, documents, and assignment submission. Learning materials are hosted on the school's VLE (Virtual Learning Environment).
+
+The IT helpdesk is open each day from 8:00am to 5:00pm. Acceptable Use Policies govern device and internet use on site; pupils and parents sign these annually.
+
+**Source:** http://example.com
+
+---
+
+## Learning Support and SEND
+
+Beri College's Learning Development department supports pupils with a range of Special Educational Needs and Disabilities (SEND), including dyslexia, dyspraxia, ADHD, and autism spectrum conditions.
+
+A full-time SENCo (Special Educational Needs Coordinator) leads the department, supported by two Learning Support Assistants. One-to-one and small-group withdrawal sessions are available. An Educational Psychologist visits half-termly for assessment and review.
+
+Access arrangements for public examinations (e.g. extra time, a reader, or a scribe) are applied for through the SENCo, in line with JCQ regulations. Parents considering applying should contact the SENCo as early as possible, ideally before entry.
+
+Pupils with EHCPs (Education, Health and Care Plans) are supported; prospective parents should disclose this at the registration stage so the school can assess whether it can meet the pupil's needs. All support plans are reviewed at least annually with pupils, parents, and relevant staff.
+
+**Source:** http://example.com
+
+---
+
+## Careers and Higher Education
+
+A dedicated Careers team, led by a qualified Careers Adviser, provides guidance from Year 9 onwards. All Year 9 pupils complete a careers interest assessment and receive an individual guidance interview.
+
+Year 10 and 11 pupils undertake a one-week work experience placement, arranged with support from the Careers team. The school maintains relationships with over 150 employer and alumni contacts across law, medicine, finance, engineering, the arts, and the public sector.
+
+Sixth Form UCAS support includes: personal statement workshops (September–October, Year 13), mock interviews (November), university application deadline tracking, and a dedicated UCAS Portal. The school subscribes to Unifrog for careers exploration and opportunity matching.
+
+An annual Careers Fair brings 40+ employers and university representatives to campus each February. Oxbridge preparation includes dedicated application support, practice interviews with Oxford and Cambridge alumni, and written work clinics.
+
+**Source:** http://example.com
+
+---
+
+## Community and Charity
+
+Beri College has a strong tradition of community engagement. Each year group undertakes at least one community service project. The whole-school charity is chosen by the School Council each September.
+
+The Sixth Form runs a Community Action programme, placing students in local primary schools, care homes, and charities for two hours per week. Participation is voluntary but strongly encouraged and noted in school references.
+
+Fundraising activities include the annual Sponsored Walk (typically raising £15,000–£20,000), bake sales, quiz nights, and the Lent-term House Charity Challenge. In 2024, the school raised over £28,000 for charitable causes.
+
+Beri College has a partnership with a school in Uganda through the Link Schools network, involving fundraising, letter exchanges, and a biennial staff visit.
+
+**Source:** http://example.com
+
+---
+
+## Sixth Form
+
+The Sixth Form (Years 12 and 13) has approximately 200 students and operates as a semi-independent community within the school. Students have access to a dedicated Sixth Form Centre with common rooms, private study spaces, a kitchenette, and a café area.
+
+Sixth Form students may leave the site during free periods with written parental permission (for those under 18). They are expected to model exemplary conduct and many take on leadership roles as prefects, house officers, subject mentors, and committee members.
+
+The enrichment programme runs alongside A-Level study and includes: EPQ supervision, Oxbridge preparation, university visit days, a politics lecture series, entrepreneurship workshops, and the Sixth Form Conference. All Year 12 students complete a week of work experience or shadowing in the Lent term.
+
+Internal progression from Year 11 is automatic for pupils meeting GCSE requirements. External applicants are welcomed; approximately 20 external students join each year. The Sixth Form has its own induction programme in September.
+
+**Source:** http://example.com
+
+---
+
+## Parent Communication
+
+The school communicates with parents via the Parent Portal (accessible online and via the school app), weekly email newsletters, and termly reports. The Parent Portal provides real-time access to attendance records, timetables, homework assignments, and fee statements.
+
+Parents' Evenings are held once per term for each year group. Subject teachers are available for individual appointments via the school's online booking system. The Head of Year and Form Tutor can be contacted directly by email at any time.
+
+The Parent Association (PA) meets monthly and organises social events, the second-hand uniform shop, and fundraising. All parents are automatically members. The PA Chair attends termly meetings with the Headmaster.
+
+Annual reports are issued at the end of each term. Mid-year progress reports are sent at the half-term of the Michaelmas and Lent terms. Year 11 and 13 pupils receive additional tracking reports in the Spring term.
+
+**Source:** http://example.com
+
+---
+
+## Contact and Location
+
+Beri College is located on Beri Lane, Elmbridge, Surrey, KT10 0BC (fictitious address for demonstration purposes).
+
+**General enquiries:** 01372 000 000 | info@bericollege.example.com
+
+**Admissions:** Mrs Laura Chen | admissions@bericollege.example.com | 01372 000 001
+
+**Bursar's office (fees and finance):** bursary@bericollege.example.com | 01372 000 002
+
+**Learning Support / SENCo:** senco@bericollege.example.com
+
+The school office is open Monday to Friday, 8:00am to 5:30pm during term time, and 9:00am to 3:00pm during school holidays. Voicemail is available outside office hours.
+
+Visitors must sign in at reception and wear a visitor badge at all times. All staff are DBS-checked.
+
+**Source:** http://example.com
+
+---
+
+## Facilities
+
+The school's 22-acre campus includes:
+
+**Academic:** 8 science laboratories, 2 computer suites, a dedicated art and design studio, a DT workshop, a drama studio, a recording studio, and 12 music practice rooms.
+
+**Sport:** 25-metre 6-lane indoor swimming pool, sports hall, fully equipped gymnasium, fitness suite, and 14 acres of playing fields with rugby, football, and cricket pitches.
+
+**Performing Arts:** The 350-seat Beri Theatre with full lighting and sound rig, a black-box studio theatre, and a dance studio.
+
+**Communal:** Main dining hall (capacity 450), Beri Pantry café, school library (18,000+ volumes), sixth form centre, and a parent meeting suite.
+
+All buildings are accessible to wheelchair users. Disabled parking bays are located adjacent to the main entrance.
+
+**Source:** http://example.com
+
+---
+
+## Day School and Boarding
+
+Beri College is a day school; there are no boarding facilities. All pupils travel to and from school each day. The school's late-stay provision allows pupils to remain on site until 6:00pm on weekdays, with supervised prep in the library and access to after-school clubs.
+
+A breakfast club is available from 7:45am in the dining hall for pupils who arrive early. Early drop-off and late collection are managed through the school office.
+
+**Source:** http://example.com
+
+---
+
+## Religion and Ethos
+
+Beri College is a non-denominational school and welcomes pupils of all faiths and none. The school's values — integrity, curiosity, compassion, and service — underpin all aspects of school life.
+
+A non-compulsory multi-faith reflection room is available to pupils of all backgrounds. Religious and cultural festivals from a range of traditions are acknowledged in the school calendar. The PSHE and RS curricula include world religions and ethical philosophy.
+
+Collective worship takes the form of a weekly whole-school Assembly, which is broadly spiritual but non-religious in character. Sixth Form students lead assemblies on a rota basis.
+
+**Source:** http://example.com
+
+---
+
+## International Students
+
+Beri College welcomes applications from international families. As a day school, it does not provide accommodation, but can recommend local homestay providers and guardianship agencies.
+
+Students whose first language is not English may be assessed for English language support. The school offers EAL (English as an Additional Language) support through the Learning Development department. An IELTS score of 6.5 or above (or equivalent) is typically expected at Sixth Form entry for non-native English speakers.
+
+All international pupils must have the right to study in the UK. Beri College is not a UKVI-registered sponsor for student visas; international applicants should seek independent immigration advice.
+
+**Source:** http://example.com
+
+---
+
+## Alumni
+
+The Old Berians Association (OBA) connects graduates of Beri College worldwide. It organises an annual reunion dinner, a careers networking event, and a mentoring programme pairing current Sixth Form students with alumni working in their field of interest.
+
+Notable alumni (fictitious examples for demonstration): Dr Amara Osei, consultant cardiologist; James Whitfield QC, barrister; Professor Li Wei, University of Cambridge; Nadia Russo, BAFTA-nominated documentary filmmaker.
+
+Alumni wishing to register with the OBA or offer mentoring can contact the Development Office at alumni@bericollege.example.com.
+
+**Source:** http://example.com

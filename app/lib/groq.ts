@@ -2,6 +2,7 @@ import { getApiKey } from "./api-key";
 import { SCHOOL_NAME } from "./school-config";
 
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
+const STREAM_TIMEOUT_MS = 30_000; // abort if no bytes received for 30 s
 
 export interface GroqMessage {
   role: "system" | "user" | "assistant";
@@ -25,11 +26,21 @@ export async function streamGroqCompletion({
   onDone,
   onError,
 }: GroqStreamOptions): Promise<void> {
+  const controller = new AbortController();
+
+  // Watchdog: reset on each received chunk; fire if stream goes silent
+  let watchdog = setTimeout(() => controller.abort(), STREAM_TIMEOUT_MS);
+  const resetWatchdog = () => {
+    clearTimeout(watchdog);
+    watchdog = setTimeout(() => controller.abort(), STREAM_TIMEOUT_MS);
+  };
+
   try {
     const apiKey = getApiKey();
 
     const response = await fetch(GROQ_API_URL, {
       method: "POST",
+      signal: controller.signal,
       headers: {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
@@ -70,6 +81,8 @@ export async function streamGroqCompletion({
       const { done, value } = await reader.read();
       if (done) break;
 
+      resetWatchdog();
+
       const chunk = decoder.decode(value, { stream: true });
       const lines = chunk.split("\n").filter((l) => l.startsWith("data: "));
 
@@ -79,7 +92,14 @@ export async function streamGroqCompletion({
 
         try {
           const parsed = JSON.parse(data);
+
+          // Catch server-side stream errors embedded in the SSE payload
+          if (parsed.error) {
+            throw new Error(parsed.error.message ?? "Stream error from API.");
+          }
+
           const delta = parsed.choices?.[0]?.delta;
+          const finishReason = parsed.choices?.[0]?.finish_reason;
 
           if (delta?.content) {
             fullText += delta.content;
@@ -90,14 +110,29 @@ export async function streamGroqCompletion({
             reasoningText += delta.reasoning;
             onReasoning(reasoningText);
           }
-        } catch {
-          // Skip malformed SSE chunks
+
+          // Explicit stop — clear watchdog early
+          if (finishReason === "stop" || finishReason === "length") {
+            clearTimeout(watchdog);
+          }
+        } catch (parseErr) {
+          if (parseErr instanceof Error && parseErr.message !== "Stream error from API.") {
+            // Skip truly malformed SSE chunks
+          } else {
+            throw parseErr;
+          }
         }
       }
     }
 
+    clearTimeout(watchdog);
     onDone(fullText);
   } catch (e) {
-    onError(e instanceof Error ? e : new Error(String(e)));
+    clearTimeout(watchdog);
+    if (e instanceof Error && e.name === "AbortError") {
+      onError(new Error("The response timed out. Please try asking a shorter or more specific question."));
+    } else {
+      onError(e instanceof Error ? e : new Error(String(e)));
+    }
   }
 }
