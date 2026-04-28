@@ -374,3 +374,69 @@ Fundraising activities include the annual Sponsored Walk (typically raising £15
 Beri College has a partnership with a school in Uganda through the Link Schools network, involving fundraising, letter exchanges, and a biennial staff visit.
 
 **Source:** http://example.com
+
+---
+
+## Sixth Form
+
+The Sixth Form (Years 12 and 13) has approximately 200 students and operates as a semi-independent community within the school. Students have access to a dedicated Sixth Form Centre with common rooms, private study spaces, a kitchenette, and a café area.
+
+Sixth Form students may leave the site during free periods with written parental permission (for those under 18). They are expected to model exemplary conduct and many take on leadership roles as prefects, house officers, subject mentors, and committee members.
+
+The enrichment programme runs alongside A-Level study and includes: EPQ supervision, Oxbridge preparation, university visit days, a politics lecture series, entrepreneurship workshops, and the Sixth Form Conference. All Year 12 students complete a week of work experience or shadowing in the Lent term.
+
+Internal progression from Year 11 is automatic for pupils meeting GCSE requirements. External applicants are welcomed; approximately 20 external students join each year. The Sixth Form has its own induction programme in September.
+
+**Source:** http://example.com
+
+---
+
+## Parent Communication
+
+The school communicates with parents via the Parent Portal (accessible online and via the school app), weekly email newsletters, and termly reports. The Parent Portal provides real-time access to attendance records, timetables, homework assignments, and fee statements.
+
+Parents' Evenings are held once per term for each year group. Subject teachers are available for individual appointments via the school's online booking system. The Head of Year and Form Tutor can be contacted directly by email at any time.
+
+The Parent Association (PA) meets monthly and organises social events, the second-hand uniform shop, and fundraising. All parents are automatically members. The PA Chair attends termly meetings with the Headmaster.
+
+Annual reports are issued at the end of each term. Mid-year progress reports are sent at the half-term of the Michaelmas and Lent terms. Year 11 and 13 pupils receive additional tracking reports in the Spring term.
+
+**Source:** http://example.com
+
+---
+
+## Contact and Location
+
+Beri College is located on Beri Lane, Elmbridge, Surrey, KT10 0BC (fictitious address for demonstration purposes).
+
+**General enquiries:** 01372 000 000 | info@bericollege.example.com
+
+**Admissions:** Mrs Laura Chen | admissions@bericollege.example.com | 01372 000 001
+
+**Bursar's office (fees and finance):** bursary@bericollege.example.com | 01372 000 002
+
+**Learning Support / SENCo:** senco@bericollege.example.com
+
+The school office is open Monday to Friday, 8:00am to 5:30pm during term time, and 9:00am to 3:00pm during school holidays. Voicemail is available outside office hours.
+
+Visitors must sign in at reception and wear a visitor badge at all times. All staff are DBS-checked.
+
+**Source:** http://example.com
+
+---
+
+## Facilities
+
+The school's 22-acre campus includes:
+
+**Academic:** 8 science laboratories, 2 computer suites, a dedicated art and design studio, a DT workshop, a drama studio, a recording studio, and 12 music practice rooms.
+
+**Sport:** 25-metre 6-lane indoor swimming pool, sports hall, fully equipped gymnasium, fitness suite, and 14 acres of playing fields with rugby, football, and cricket pitches.
+
+**Performing Arts:** The 350-seat Beri Theatre with full lighting and sound rig, a black-box studio theatre, and a dance studio.
+
+**Communal:** Main dining hall (capacity 450), Beri Pantry café, school library (18,000+ volumes), sixth form centre, and a parent meeting suite.
+
+All buildings are accessible to wheelchair users. Disabled parking bays are located adjacent to the main entrance.
+
+**Source:** http://example.com
