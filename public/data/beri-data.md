@@ -193,3 +193,52 @@ Recent honours: Surrey U15 Rugby Champions 2024; National Schools Swimming Champ
 Partnerships with Elmbridge FC, Surrey Cricket Board, and Swim England South East provide additional coaching, fixture opportunities, and talent identification pathways for pupils.
 
 **Source:** http://example.com
+
+---
+
+## School Overview
+
+Beri College is a fictitious independent co-educational day school for pupils aged 11–18, used to demonstrate BERI Labs' AI education framework. It is modelled on a selective independent school in Elmbridge, Surrey, with approximately 900 pupils across Years 7–13.
+
+The school's ethos centres on academic rigour, personal development, and service to the community. It aims to develop curious, confident, and compassionate young people prepared for life beyond school.
+
+Beri College is a member of the Headmasters' and Headmistresses' Conference (HMC) and the Independent Schools Council (ISC). It holds ISI inspection ratings of Excellent across all categories.
+
+The school operates a house system, an extensive co-curricular programme, and strong links with the local community.
+
+**Source:** http://example.com
+
+---
+
+## Leadership
+
+**Headmaster:** Mr Jonathan Fairfax MA (Oxon) joined Beri College in 2019, previously serving as Deputy Head at a leading HMC school in the South East.
+
+**Deputy Head (Academic):** Dr Sarah Mwangi PhD, oversees curriculum, timetabling, and academic standards.
+
+**Deputy Head (Pastoral):** Mr David Okafor, responsible for pupil wellbeing, the house system, and behaviour policy.
+
+**Head of Sixth Form:** Ms Priya Sharma, leads Sixth Form provision including UCAS guidance and enrichment.
+
+**Bursar:** Mrs Helen Cartwright, manages finance, estates, and operations.
+
+**Head of Admissions:** Mrs Laura Chen handles all enquiries and open events. Contact: admissions@bericollege.example.com or 01372 000 000.
+
+The Senior Leadership Team meets weekly and is supported by a Board of Governors comprising independent professionals, parents, and community representatives.
+
+**Source:** http://example.com
+
+---
+
+## Houses
+
+Beri College operates a four-house system. Every pupil is assigned to a house on entry and remains in it throughout their time at school. The four houses are:
+
+- **Ashton** (red) — named after a pioneer in education
+- **Bramley** (blue) — named after a local historical figure
+- **Croft** (green) — named after a distinguished alumna
+- **Devere** (gold) — named after a school founder
+
+Each house is led by a Head of House (staff) and elected Sixth Form prefects. Inter-house competitions include House Music, House Drama, House Sports Day, House Quiz, and a Lent-term charity challenge. The House Cup is awarded at the end of the Summer term. House ties worn by Years 7–11 display the pupil's house colour.
+
+**Source:** http://example.com
