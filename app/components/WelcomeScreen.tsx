@@ -54,7 +54,7 @@ export function WelcomeScreen({ onQuestion }: WelcomeScreenProps) {
         </p>
 
         <p
-          className="leading-relaxed"
+          className="leading-relaxed mb-2"
           style={{ color: "var(--school-text-soft)", fontSize: "13.8px" }}
         >
           {CHATBOT_NAME} is a student-built AI tool created by{" "}
@@ -69,6 +69,19 @@ export function WelcomeScreen({ onQuestion }: WelcomeScreenProps) {
           — a student-led AI education framework that builds bespoke AI tools
           for schools. It uses retrieval-augmented generation to deliver cited,
           accurate answers from the school knowledge base.
+        </p>
+
+        <p
+          className="leading-relaxed px-4 py-2 rounded-lg"
+          style={{
+            color: "var(--school-text-muted)",
+            fontSize: "12px",
+            background: "var(--school-accent-light)",
+          }}
+        >
+          <strong>Note:</strong> {SCHOOL_NAME} is a fictitious school invented
+          purely to demonstrate {CHATBOT_NAME}&apos;s capabilities. All
+          information shown is illustrative and for demonstration purposes only.
         </p>
       </div>
 
