@@ -12,7 +12,7 @@ export function buildReportMailto({
   citations,
 }: ReportParams): string {
   const NA = "(not available)";
-  const to = "feedback@ashfordcollege.ac.uk";
+  const to = "beri.ai.model@gmail.com";
   const subject = `${SCHOOL_NAME} Chatbot feedback \u2013 flagged output`;
 
   const timestamp = new Date().toLocaleString();
