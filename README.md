@@ -1,7 +1,5 @@
 # Beri Labs 🎓
 
-> Making school information instantly accessible through AI
-
 ## What is Beri?
 
 Beri transforms scattered school resources into a conversational, citation-driven interface. Students, staff, and parents can ask questions about policies, procedures, and information—and get verified answers in seconds instead of searching through emails, handbooks, and outdated systems.
